@@ -121,3 +121,65 @@ nav a:hover{
     margin-top: 2%;
     font-size: 1.2em;
 }
+.works-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 50vh;
+}
+.works-title{
+    font-size: 3em;
+    text-align: center;
+}
+.works-tagline{
+    font-size: 1.2em;
+    text-align: center;
+}
+.works{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.work{
+    position: relative;
+    width: 31.86%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.work-image{
+    width: 100%;
+    border-radius: 20px;
+}
+.work-absolute{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1, 1, 41);
+    opacity: 0;
+    border-radius: 20px;
+}
+.work-absolute p{
+    font-size: 1.2em;
+    color: white;
+    padding: 20% 10% 10% 10%;
+}
+.work-absolute button{
+    font-size: 1.2em;
+    padding: 3% 5%;
+    margin: 0 30%;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    transition: background-color .3s ease;
+}
+.work-absolute button:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+.work-absolute:hover{
+    opacity: 1;
+    color: white;
+    transition: opacity .5s ease;
+}
