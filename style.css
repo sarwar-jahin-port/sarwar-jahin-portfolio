@@ -2,15 +2,30 @@
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
+}
+.btn{
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    background-color: transparent;
+    color: blueviolet;
+    padding: 1% 2%;
+    font-size: 1.5em;
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: blueviolet;
+    transition: all .3s ease;
 }
 header{
     width: 80%;
     margin: auto;
     padding: 30px 0px;
 }
-#logo{
-    width: 10%;
-    height: 10%;
+.logo{
+    width: 40px;
+    height: 45px;
 }
 nav{
     display: flex;
@@ -73,6 +88,7 @@ nav a:hover{
 .introduction-detail p{
     font-size: 1.5em;
     line-height: 1.8em;
+    text-align: center;
 }
 .pricing{
     position: absolute;
@@ -182,4 +198,151 @@ nav a:hover{
     opacity: 1;
     color: white;
     transition: opacity .5s ease;
+}
+.see-more-btn{
+    text-align: center;
+    margin: 5% 0;
+}
+.collaborations h1{ 
+    text-align: center;
+    font-size: 2em;
+}
+.companies{
+    width: 80%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.companies img{
+    min-width: 300px;
+    min-height: 110px;
+}
+
+.startup-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.startup-details{
+    padding: 10% 0 20% 0;
+    background-color: #2e2e2e;   
+}
+.startup-details div{
+    color: white;
+    width: 70%;
+    margin: auto;
+}
+.startup-details h1{
+    font-size: 2em;
+    padding-bottom: 2%;
+    text-align: center;
+}
+.startup-details p{
+    font-size: 1.5em;
+    line-height: 1.8em;
+    text-align: center;
+}
+.projects{
+    position: absolute;
+    top: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    width: 80%;
+    border-radius: 20px;
+}
+.project{
+    padding: 2% 4%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #888888;
+
+}
+.project img{
+    width: 200px;
+    height: 100px;
+}
+.project p{
+    margin: 3% 0;
+    padding: 0 3%;
+    font-size: 1.3em;
+}
+.project :nth-child(3n){
+    text-decoration: none;
+    background-color: gainsboro;
+    padding: 2% 4%;
+    border-radius: 1.2em;
+    font-size: 1em;
+}
+.project a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 45%;
+}
+.connect{
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #141c3a;
+    border-radius: .6em;
+    width: 70%;
+    margin: auto;
+    padding: 2%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+.connect :nth-child(2n){
+    width: 33%;
+}
+.connect button{
+    background-color: transparent;
+    border: 2px solid #5BE9B9;
+    border-radius: 1.5em;
+    color: white;
+    padding: 1% 3%;
+    font-size: 1em;
+}
+.connect button a{
+    text-decoration: none;
+    color: white;
+}
+.connect button:hover{
+    cursor: pointer;
+    background-color: #5BE9B9;
+    color: black;
+    transition: all .3s ease;
+}
+footer{
+    position: relative;
+    background-color: #6E07F3;
+    text-align: center;
+    padding: 10% 0;
+}
+.footer-tagline{
+    font-size: 1.5em;
+    margin-top: 3%;
+    color: #888888;
+}
+.social-links{
+    margin: 2% 0;
+}
+.social-links img{
+    width: 35px;
+    margin: 5px;
+}
+.writter{
+    font-size: 1.2em;
+    color: gray;
 }
