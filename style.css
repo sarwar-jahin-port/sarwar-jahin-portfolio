@@ -346,3 +346,58 @@ footer{
     font-size: 1.2em;
     color: gray;
 }
+
+.profile-pic img{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 8%;
+    border-radius: 50%;
+}
+form{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form h1{
+    font-size:2.5em;
+}
+.form-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 5% 0;
+}
+.form-user-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 2em;
+}
+.form-name, .form-email{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .5em;
+    font-size: 1.5em;
+}
+.form-name input, .form-email input{
+    padding: 1.5em;
+}
+.form-messsage{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 1.5em;
+    margin-top: 3%;
+    gap: .5em;
+    width: 100%;
+}
+#message{
+    width: 100%;
+    padding: 2%;
+    font-size: .8em;
+    box-sizing: border-box;
+}
